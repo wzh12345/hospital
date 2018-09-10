@@ -1,0 +1,229 @@
+.body_box {
+    overflow: hidden;
+}
+.position {
+    font-size: 14px;
+    color: #707070;
+    padding: 20px 0;
+}
+.block {
+    width: 1230px;
+    margin: 0 auto;
+    position: relative;
+}
+.dorctordtail .part1 {
+    padding-top: 20px;
+}
+.block {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.dorctordtail .part1 .img {
+    width: 237px;
+    height: 347px;
+    overflow: hidden;
+    float: left;
+}
+.dorctordtail .part1 .text-box {
+    margin-left: 306px;
+}
+.dorctordtail .part1 .text-box{
+    margin-left: 306px;
+}
+.dorctordtail .part1 .title1{
+    font-size: 24px;
+    color: #333333;
+}
+.dorctordtail .part1 .title1 .pubc-more{
+    width: auto;
+    padding: 0 15px;
+}
+.dorctordtail .part1 .title2{
+    font-size: 14px;
+    color: #474747;
+    margin-top: 20px;
+    line-height: 1.4;
+}
+.dorctordtail .part1 .text{
+    font-size: 14px;
+    color: #333333;
+    line-height: 22px;
+    width: 700px;
+}
+.dorctordtail .part1 .text p{
+    margin-bottom: 20px;
+}
+.dorctordtail .part1{
+    padding-top: 20px;
+}
+.dorctordtail .part2 {
+    margin-top: 60px;
+}
+.dorctordtail .part2 .title1 span{
+    font-size: 24px;
+    color: #333333;
+}
+
+.dorctordtail .part2 table {
+    width: 100%;
+}
+.dorctordtail .part2 .table{
+    margin-top: 30px;
+}
+.dorctordtail .part2 table th {
+    background: #01763a;
+    color: #fff;
+    font-size: 16px;
+    height: 66px;
+    border-left: 1px solid #129853;
+    font-weight: 100;
+    text-align: center;
+}
+
+.dorctordtail .part2 table .th1 {
+    width: 212px;
+}
+
+.dorctordtail .part2 table .th2 {
+    width: 218px;
+}
+
+.dorctordtail .part2 table .th3 {
+    width: 236px;
+}
+
+.dorctordtail .part2 table .th4 {
+    width: 575px;
+}
+.dorctordtail .part2 table .th5 {
+    width: 220px;
+}
+.dorctordtail .part2 table td {
+    font-size: 14px;
+    color: #333333;
+    border: 1px solid #ececec;
+}
+.dorctordtail .part2 table td .td {
+    padding: 24px;
+    text-align: center;
+    line-height: 1.4;
+}
+
+.dorctordtail .part2 table td .td1 {
+    padding: 26px;
+    text-align: left;
+    line-height: 24px;
+}
+
+.dorctordtail .part2 table .table1 {
+    vertical-align: top;
+}
+
+.dorctordtail .part2 table .tab-box {
+    vertical-align: top;
+    /*border-bottom: 0;*/
+    border-right: 0;
+}
+
+.dorctordtail .part2 table .table1 th {
+    height: 50px;
+    font-size: 16px;
+    color: #333;
+    background: #f8f8f8;
+    text-align: center;
+    border-color: #ececec;
+}
+
+.dorctordtail .part2 table .table1 {
+    border-left: 0;
+    text-align: center;
+}
+
+.dorctordtail .part2 table .table1 .ith1 {
+    width: 194px;
+    border-left: 0;
+}
+
+.dorctordtail .part2 table .table1 .ith2 {
+    width: 460px;
+}
+
+.dorctordtail .part2 table .table1 .ith3 {
+    width: 110px;
+}
+
+.dorctordtail .part2 table .table2 {
+    width: 100%;
+}
+
+.dorctordtail .part2 table .table2 .tb2-th1 {
+    width: 116px;
+}
+
+.dorctordtail .part2 table .table2-box {
+    padding: 5px;
+}
+
+.dorctordtail .part2 table .table2-box th {
+    height: 40px;
+}
+
+.dorctordtail .part2 table .table2-box .tb2-th1 {
+    width: 114px;
+    line-height: 1.4;
+}
+
+.dorctordtail .part2 table .table2-box .tb2-th2 {
+    width: 110px;
+}
+
+.dorctordtail .part2 table .table2-box .tb2-th3 {
+    width: 64px;
+}
+
+.dorctordtail .part2 table .table2-box .tb2-th4 {
+    width: 64px;
+}
+
+.dorctordtail .part2 table .table2-box .tb2-th5 {
+    width: 64px;
+    border-right: 1px solid #ececec;
+}
+
+.dorctordtail .part2 table .table2-box td {
+    height: 40px;
+}
+
+.dorctordtail .part2 table .table2-box th {
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    font-size: 14px;
+    color: #333333;
+}
+.item {
+    /*width: 80%;*/
+    height: 126px;
+    margin: 0 auto;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #fff;
+    position: absolute;
+    top: 250px;
+    left: 900px;
+}
+.img {
+    width: 60px;
+    height: 62px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.h2 {
+    font-size: 16px;
+    color: #333333;
+    margin-top: 15px;
+    text-align: center;
+    line-height: normal;
+}

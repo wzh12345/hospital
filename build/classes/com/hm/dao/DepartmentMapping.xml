@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.dao.DepartmentMapping">
+
+   <resultMap type="Department" id="DepartmentMapping">
+     <id property="departmentId" column="DepartmentId"/>
+     <result property="departmentName" column="DepartmentName"/>
+     <result property="departmentRecommend" column="DepartmentRecommend"/>
+     <result property="photoDepartment" column="photoDepartment"/>
+   </resultMap>
+   
+   <resultMap type="Doctor" id="DoctorMapping">
+      <id property="id" column="did"/>
+      <result property="name" column="dname"/>
+      <result property="sex" column="sex"/>
+      <result property="titel" column="titel"/>
+      <result property="good" column="Good"/>
+      <result property="introduce" column="introduce"/>
+      <result property="details" column="Details"/>
+      <result property="departmentId" column="DepartmentId"/>
+      <result property="photodoctor" column="photoDoctor"/>
+      <result property="password" column="password"/>
+   </resultMap>
+   
+  <!-- 根据id查找科室信息 -->
+  <select id="findByDepartmentId" resultMap="DepartmentMapping">
+     SELECT * FROM department WHERE DepartmentId=#{departmentId};
+  </select>
+  
+  <!-- 根据科室id查找出对应科室里的医生 -->
+  <select id="findDoctorByDepartmentId" resultMap="DoctorMapping">
+     SELECT * FROM doctor WHERE DepartmentId=#{departmentId}
+  </select>
+  
+  <!-- 根据科室名查询出科室信息 -->
+  <select id="findDepartment" resultType="Department">
+     SELECT * FROM department WHERE DepartmentName=#{departmentName};
+  </select>
+  
+</mapper>

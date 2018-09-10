@@ -1,0 +1,67 @@
+.examination {
+    margin-top: 20px;
+    overflow: hidden;
+}
+.block {
+    width: 1230px;
+    margin: 0 auto;
+    position: relative;
+}
+.examination .video {
+    width: 493px;
+    height: 364px;
+    background: #000;
+    position: relative;
+    float: left;
+    overflow: hidden;
+}
+.examination .boxleft {
+    background: #fff;
+    width: 690px;
+    height: 364px;
+    float: right;
+}
+.examination .boxleft .inner {
+    padding: 30px 0;
+}
+.examination .boxleft .pubc-title1 {
+    text-align: left;
+}
+.pubc-title1 {
+    font-size: 24px;
+    color: #333333;
+    text-align: center;
+}
+.examination .boxleft .desc {
+    line-height: 24px;
+    color: #474747;
+    font-size: 14px;
+    margin-top: 16px;
+    height: 108px;
+    overflow: hidden;
+}
+.pubc-more:hover {
+    color: #fff!important;
+    background: #01763a!important;
+    border-color: #01763a!important;
+}
+a:hover {
+    color: #01763a;
+}
+.pubc-more {
+    font-size: 12px;
+    color: #474747;
+    width: 90px;
+    line-height: 22px;
+    height: 22px;
+    border: 1px solid #ddd;
+    display: block;
+    text-align: center;
+    border-radius: 10px;
+    float: right;
+    margin-top: -4px;
+}
+a {
+    text-decoration: none;
+    color: #333;
+}

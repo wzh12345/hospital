@@ -1,0 +1,44 @@
+.part1{
+    width: 500px;
+    position: absolute;
+    top: 85px;
+    left: 600px;
+}
+.span1{
+    font-size: 20px;
+}
+.child {
+    float: left;
+    width: 20%;
+}
+.item {
+    /*width: 80%;*/
+    height: 126px;
+    margin: 0 auto;
+    padding-bottom: 24px;
+    border-bottom: 2px solid #fff;
+    position: absolute;
+    top: 350px;
+    left: 1000px;
+}
+.img {
+    width: 60px;
+    height: 62px;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+.h2 {
+    font-size: 16px;
+    color: #333333;
+    margin-top: 15px;
+    text-align: center;
+    line-height: normal;
+}
+.img-doctor{
+	display: block;
+    width: 252.5px;
+    height: 267.46px;
+}

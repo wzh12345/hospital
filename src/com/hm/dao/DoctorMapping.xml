@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.dao.DoctorMapping">
+
+<resultMap type="Department" id="DepartmentMapping">
+     <id property="departmentId" column="DepartmentId"/>
+     <result property="departmentName" column="DepartmentName"/>
+     <result property="departmentRecommend" column="DepartmentRecommend"/>
+     <result property="photoDepartment" column="photoDepartment"/>
+   </resultMap>
+   
+<resultMap type="Doctor" id="DoctorMapping">
+      <id property="id" column="did"/>
+      <result property="name" column="dname"/>
+      <result property="sex" column="sex"/>
+      <result property="titel" column="titel"/>
+      <result property="good" column="Good"/>
+      <result property="introduce" column="introduce"/>
+      <result property="details" column="Details"/>
+      <result property="departmentId" column="DepartmentId"/>
+      <result property="photodoctor" column="photoDoctor"/>
+      <result property="password" column="password"/>
+      <!-- <association property="vistorTime" javaType="VistorTime"></association> -->
+   </resultMap>
+   
+   <select id="findDoctor" parameterType="int" resultMap="DoctorMapping">
+      SELECT * FROM doctor WHERE did=#{id};
+   </select>
+   
+   <select id="findDepartment" parameterType="int" resultMap="DepartmentMapping">
+       SELECT * FROM doctor,department WHERE doctor.DepartmentId=department.DepartmentId AND doctor.did=#{id};
+   </select>
+   
+   <select id="listVistorTime" parameterType="int" resultType="VistorTime">
+     SELECT * FROM vistortime WHERE did=#{id};
+   </select>
+   
+   <select id="selectDoctor" resultMap="DoctorMapping">
+      SELECT * FROM doctor WHERE dname=#{name};
+   </select>
+</mapper>

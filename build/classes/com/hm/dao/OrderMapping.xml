@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hm.dao.OrderMapping">
+   
+   <!-- <resultMap type="Order" id="OrderMapping">
+      <id property=""/>
+   </resultMap> -->
+   
+   <insert id="insertOrder" parameterType="Order">
+      INSERT INTO `order`(`name`,sex,age,department,doctorName,phone,orderTime,doctorId,`status`,uid) 
+      VALUE(#{name},#{sex},#{age},#{department},#{doctorName},#{phone},#{orderTime},#{doctorId},#{status},#{uid})
+   </insert>
+   
+   <select id="selectUser" parameterType="int" resultType="Order">
+        SELECT * FROM `order` WHERE uid=#{uid};
+   </select>
+   
+   <select id="selectPatient" parameterType="int" resultType="Order">
+        SELECT * FROM `order` WHERE doctorId=#{doctorId};
+   </select>
+   
+   <select id="selectOrder" parameterType="int" resultType="Order">
+        SELECT * FROM `order` WHERE pid=#{pid};
+   </select>
+   
+   <update id="changeStatus">
+       UPDATE `order` SET `status`=2 WHERE pid=#{pid};
+   </update>
+</mapper>
